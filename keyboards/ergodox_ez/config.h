@@ -36,9 +36,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define MOUSEKEY_INTERVAL       20
 #define MOUSEKEY_DELAY          0
-#define MOUSEKEY_TIME_TO_MAX    60
-#define MOUSEKEY_MAX_SPEED      7
+#define MOUSEKEY_TIME_TO_MAX    8
+#define MOUSEKEY_MAX_SPEED      10
 #define MOUSEKEY_WHEEL_DELAY 0
+#define MOUSEKEY_WHEEL_MAX_SPEED   2
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 1
 
 #define TAPPING_TOGGLE  1
 
@@ -81,6 +83,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* fix space cadet rollover issue */
 #define DISABLE_SPACE_CADET_ROLLOVER
 
+// #define RGB_MIDI
 #define RGBW_BB_TWI
 
 #define RGBW 1
@@ -100,15 +103,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PREVENT_STUCK_MODIFIERS
 
 #define USB_MAX_POWER_CONSUMPTION 500
-
-// RGB backlight
-#define DRIVER_ADDR_1 0b1110100
-#define DRIVER_ADDR_2 0b1110111
-#define DRIVER_COUNT 2
-#define DRIVER_1_LED_TOTAL 24
-#define DRIVER_2_LED_TOTAL 24
-#define DRIVER_LED_TOTAL DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL
-#define RGB_MATRIX_SKIP_FRAMES 10
 
 // #define RGBLIGHT_COLOR_LAYER_0 0x00, 0x00, 0xFF
 /* #define RGBLIGHT_COLOR_LAYER_1 0x00, 0x00, 0xFF */
